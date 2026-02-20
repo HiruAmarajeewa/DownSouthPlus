@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rebrosy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #ffd700;
+            --bg-color: #1a1a1a;
+            --text-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 2rem;
+            background-color: #111;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            padding: 3rem;
+        }
+
+        .image-section img {
+            max-width: 450px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+
+        .button-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            transition: 0.3s ease;
+            min-width: 220px;
+            justify-content: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            opacity: 0.9;
+        }
+
+        .btn-fb { background-color: #1877F2; }
+        .btn-ig { 
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .btn-wa { background-color: #25D366; }
+        .btn-tt { background-color: #000000; border: 1px solid #444; }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #111;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .image-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rebrosy</h1>
+</header>
+
+<main class="content">
+
+    <!-- LEFT IMAGE -->
+    <div class="image-section">
+        <img src="img/1000904334.jpg" alt="Rebrosy Image">
+    </div>
+
+    <!-- RIGHT BUTTONS -->
+    <div class="button-section">
+        <div class="social-buttons">
+
+            <a href="https://www.facebook.com/rebrosyweddings?mibextid=ZbWKwL" class="btn btn-fb" target="_blank">
+                <i class="fab fa-facebook-f"></i> Rebrosy
+            </a>
+
+            <a href="https://www.facebook.com/share/1GX361nURT/" class="btn btn-fb" target="_blank">
+                <i class="fab fa-facebook-f"></i> Down South Plus
+            </a>
+
+            <a href="https://www.tiktok.com/@downsouth.plus?_r=1&_t=ZS-944ft8Q5Q3x" class="btn btn-ig" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://wa.me/message/3I7ZF2FG4P6AN1" class="btn btn-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="https://www.instagram.com/_rebrosy_?igsh=M2I2ZWlhMDJoYm1p" class="btn btn-tt" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 Rebrosy. All Rights Reserved.
+</footer>
+
+</body>
+</html>
